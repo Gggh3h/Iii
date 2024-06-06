@@ -2,7 +2,7 @@
 
 <h1 align="center">〝Henry_BOTV2✨〞<br></h1>
 <p align="center">
-<img src="https://telegra.ph/file/be30b6f0bd6ca81dfce4c.jpg" alt="animated" width="500" height="300" />
+<img src="https://telegra.ph/file/9bc497cad577dc0429834.jpg" alt="animated" width="500" height="300" />
 </p>
 
 <p align="center">
