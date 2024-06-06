@@ -23,7 +23,7 @@
 -------
 # طريقه تنصيب البوت 👇
 
-- اولا يجب عمل فورك للمشروع [اضغط هنا](https://github.com/Sjshskdhd/BOT_ELGAZARV6/tree/main)
+- اولا يجب عمل فورك للمشروع [اضغط هنا](https://github.com/iKarzma/BOT-ELGAZARV6/tree/main)
 
 ## `ثم عمل سكان للباركود`
 <a href="https://BOT-ELGAZAR-QR.lsydlsyd3.repl.co/"><img src="https://repl.it/badge/github/quiec/whatsAlfa" width="200" />
