@@ -266,7 +266,7 @@ return list[Math.floor(Math.random() * list.length)]
 }
 
 // Public & Self
-if (!ElgazarBot.public) {
+if (!ahmedBot.public) {
     if (!m.key.fromMe) return
 }
 function randomNomor(angka){
@@ -282,10 +282,10 @@ const hsjdh = randomNomor(5)
           /////}})
 
 //auto recording all
-    if (global.autoRecord) { if (m.chat) { ElgazarBot.sendPresenceUpdate('recording', m.chat) }
+    if (global.autoRecord) { if (m.chat) { ahmedBot.sendPresenceUpdate('recording', m.chat) }
 }
 //autotyper all
-  if (global.autoTyping) { if (m.chat) { ElgazarBot.sendPresenceUpdate('composing', m.chat) }
+  if (global.autoTyping) { if (m.chat) { ahmedBot.sendPresenceUpdate('composing', m.chat) }
 }
 
 // total hit
@@ -323,7 +323,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "" } : {})
 "isAnimated": false
 }}}
 const xbug = (teks) => {
-  ElgazarBot.relayMessage(m.chat, { requestPaymentMessage: { Message: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'INR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})}
+  ahmedBot.relayMessage(m.chat, { requestPaymentMessage: { Message: { extendedTextMessage: { text: teks, currencyCodeIso4217: 'INR', requestFrom: '0@s.whatsapp.net', expiryTimestamp: 8000, amount: 1, background: thumb }}}}, {})}
 //-------------------End--------------------\\
 //Dont edit ot recode or bug wont work
 
@@ -348,7 +348,7 @@ detectLinks: false,
     //reply fake
 	//group target \\
 const reply = (teks) => {
-           ElgazarBot.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
+           ahmedBot.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": `${ownername}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./XeonMedia/theme/cheemspic.jpg`),"sourceUrl": `${linkz}`}}}, { quoted: m})
         }
 
 	//button
@@ -359,7 +359,7 @@ footer: desc1,
 buttons: but,
 headerType: 1
 }
-ElgazarBot.sendMessage(id, butonna, options)
+ahmedBot.sendMessage(id, butonna, options)
 }
 const http = randomNomor(500)
 
@@ -397,7 +397,7 @@ let buttonMessage = {
      mediaType: 1
    }}
        }
-   ElgazarBot.sendMessage(m.chat, buttonMessage, options)
+   ahmedBot.sendMessage(m.chat, buttonMessage, options)
    }
                 
         // Autosticker gc
@@ -446,7 +446,7 @@ if (isAdmins) return m.reply(bvl)
 if (m.key.fromMe) return m.reply(bvl)
 if (isCreator) return m.reply(bvl)
 kice = m.sender
-        await ElgazarBot.sendMessage(m.chat,
+        await ahmedBot.sendMessage(m.chat,
 			    {
 			        delete: {
 			            remoteJid: m.chat,
@@ -455,8 +455,8 @@ kice = m.sender
 			            participant: m.key.participant
 			        }
 			    })
-			ElgazarBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-ElgazarBot.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending wa.me link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+			ahmedBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+ahmedBot.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending wa.me link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
   if (antiWame)
@@ -467,7 +467,7 @@ if (isAdmins) return m.reply(bvl)
 if (m.key.fromMe) return m.reply(bvl)
 if (isCreator) return m.reply(bvl)
 kice = m.sender
-        await ElgazarBot.sendMessage(m.chat,
+        await ahmedBot.sendMessage(m.chat,
 			    {
 			        delete: {
 			            remoteJid: m.chat,
@@ -476,15 +476,15 @@ kice = m.sender
 			            participant: m.key.participant
 			        }
 			    })
-			ElgazarBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-ElgazarBot.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending wa.me link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
+			ahmedBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+ahmedBot.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@${kice.split("@")[0]} Has been kicked because of sending wa.me link in this group`, contextInfo:{mentionedJid:[kice]}}, {quoted:m})
 } else {
 }
 //antivirtex by xeon
   if (antiVirtex) {
   if (budy.length > 3500) {
   if (!isBotAdmins) return m.reply(mess.botAdmin)
-          await ElgazarBot.sendMessage(m.chat,
+          await ahmedBot.sendMessage(m.chat,
 			    {
 			        delete: {
 			            remoteJid: m.chat,
@@ -493,8 +493,8 @@ ElgazarBot.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n@
 			            participant: m.key.participant
 			        }
 			    })
-			ElgazarBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-			ElgazarBot.sendMessage(from, {text:`\`\`\`「 Virus Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending virus in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+		ahmedBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+			ahmdBot.sendMessage(from, {text:`\`\`\`「 Virus Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending virus in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
   }
   }
 //anti bad words by xeon
@@ -504,11 +504,11 @@ tos = ['مرحبًا ، راقب فمك','لم تتعلم كيف تتكلم?','�
 sin =  tos[Math.floor(Math.random() * (tos.length))]
 m.reply(sin)
 if (m.text) {
-bvl = `\`\`\`「 منع السب 」\`\`\`\n\nأنت تستخدم كلمة سيئة ولكنك مشرف لهاذا السبب لن اطردك✨`
+bvl = `\`\`\`「 منع السب 」\`\`\`\n\nأنت تستخدم كلمة سيئة ولكنك مشرف لهاذا السبب لن انيكك✨`
 if (isAdmins) return m.reply(bvl)
 if (m.key.fromMe) return m.reply(bvl)
 if (isCreator) return m.reply(bvl)
-        await ElgazarBot.sendMessage(m.chat,
+        await ahmedBot.sendMessage(m.chat,
 			    {
 			        delete: {
 			            remoteJid: m.chat,
@@ -517,8 +517,8 @@ if (isCreator) return m.reply(bvl)
 			            participant: m.key.participant
 			        }
 			    })
-			ElgazarBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-ElgazarBot.sendMessage(from, {text:`\`\`\`「 منع السب 」\`\`\`\n\n@${m.sender.split("@")[0]} تم طرده بسبب السب في الجروب`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})}
+			ahmedBot.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+ahmedBot.sendMessage(from, {text:`\`\`\`「 منع السب 」\`\`\`\n\n@${m.sender.split("@")[0]} تم طرده بسبب السب في الجروب`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})}
 }
 //antilink youtube video by xeon
 if (AntiLinkYoutubeVid)
